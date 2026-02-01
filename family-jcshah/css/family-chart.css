@@ -201,6 +201,8 @@
   opacity: 0.8;
 }
 
+.f3-info-field-label { text-transform: capitalize;}
+
 .f3-info-field-value {
   font-weight: normal;
   display: block;
@@ -210,6 +212,7 @@
   padding-bottom: 1px;
   margin-bottom: 10px;
   min-height: 18px;
+  margin-top: 2px;
 }
 
 .f3-form-buttons {
@@ -877,4 +880,41 @@
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.marque-wrap {
+  backdrop-filter: blur(6px);
+  /* background-color: rgba(255, 255, 255, .4); */
+  background-color: #f3fb07;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  padding: 6px 0;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.marque-wrap:hover marquee {animation-play-state: paused;}
+
+.marque-wrap, .marque-wrap a {
+  /* color: #fff; */
+  color: #d32314;
+}
+
+body .f3-form-cont.opened {
+  padding-top: 38px;
+}
+
+body .f3-close-btn {
+  top: 38px;
+  left: auto;
+  right: 10px;
+}
+
+body .updated-wrap {position: fixed; bottom: 6px; left: 6px; width: 100%; pointer-events: none; color: #fff; font-size: 14px;}
+
+@media screen and (max-width: 720px) {
+  body .updated-wrap {background: rgba(0, 0, 0, 0.2); text-align: center; backdrop-filter: blur(8px); z-index: 9; bottom: 0; left: 0; padding: 2px 0;}
 }
