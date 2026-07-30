@@ -742,16 +742,16 @@
   revealEls.forEach(el => io.observe(el));
 
   // Contact form -> mailto fallback (replace with a real form backend when ready)
-  document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const intent = document.getElementById('intent').value;
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    const subject = encodeURIComponent(`${intent} — ${name}`);
-    const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
-    window.location.href = `mailto:[[EMAIL]]?subject=${subject}&body=${body}`;
-  });
+  // document.getElementById('contactForm').addEventListener('submit', function (e) {
+  //   e.preventDefault();
+  //   const intent = document.getElementById('intent').value;
+  //   const name = document.getElementById('name').value;
+  //   const email = document.getElementById('email').value;
+  //   const message = document.getElementById('message').value;
+  //   const subject = encodeURIComponent(`${intent} — ${name}`);
+  //   const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
+  //   window.location.href = `mailto:[[EMAIL]]?subject=${subject}&body=${body}`;
+  // });
 
   // CV button placeholder notice if link not set
   document.getElementById('cvBtn').addEventListener('click', function (e) {
