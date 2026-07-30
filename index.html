@@ -9,10 +9,26 @@
 	<link rel="icon" href="../images/favicon.ico" sizes="192x192" />
 	<link rel="apple-touch-icon" href="../images/favicon.ico" />
 	<meta name="msapplication-TileImage" content="../images/favicon.ico" /> -->
+	<script>
+    function checkPassword() {
+      const password = document.getElementById('password').value;
+      if (password === 'mypassword') {
+        document.getElementById('content').style.display = 'block';
+        document.getElementById('login').style.display = 'none';
+      } else {
+        alert('Incorrect password');
+      }
+    }
+  </script>
 </head>
 
 <body>
-    <section class="main-wrap">
+	<div id="login">
+		<h2>Enter Password</h2>
+		<input type="password" id="password" />
+		<button onclick="checkPassword()">Login</button>
+	</div>
+    <section id="content" class="main-wrap" style="display:none;">
 		<div class="container pt-4">
 			<div class="row">
 				<div class="col-md">
@@ -24,6 +40,7 @@
 						<li><a href="https://docs.google.com/spreadsheets/d/1QZdtys1RzA3kH_0jE2d8KjqSCVt5VQNfGBGp7ONDByg/edit" target="_blank" rel="noopener noreferrer">VK</a></li>
 						<!-- <li><a href="https://kushalshah70.github.io/web/family-jcshah/" target="_blank" rel="noopener noreferrer">J.C. Shah</a></li> -->
 						<li><a href="https://supriyasshah.github.io/app/" target="_blank" rel="noopener noreferrer">J.C. Shah</a></li>
+						<li><a href="https://kushalshah70.github.io/web/portfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
 					</ul>
 				</div>
 			</div>
