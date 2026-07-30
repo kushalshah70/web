@@ -10,9 +10,8 @@
 	<link rel="apple-touch-icon" href="../images/favicon.ico" />
 	<meta name="msapplication-TileImage" content="../images/favicon.ico" /> -->
 	<script>
-    function checkPassword() {
-      const password = document.getElementById('password').value;
-      if (password === '622026') {
+    function checkPassword() {const kucode = document.getElementById('kucode').value;
+      if (kucode === 'P622026') {
         document.getElementById('content').style.display = 'block';
         document.getElementById('login').style.display = 'none';
       } else {
@@ -25,7 +24,7 @@
 <body>
 	<div id="login">
 		<h2>Enter Password</h2>
-		<input type="password" id="password" />
+		<input type="password" id="kucode" />
 		<button onclick="checkPassword()">Login</button>
 	</div>
     <section id="content" class="main-wrap" style="display:none;">
